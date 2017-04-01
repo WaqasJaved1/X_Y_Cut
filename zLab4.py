@@ -25,6 +25,7 @@ def intensityHistogram(source,destination):
 	a=numpy.transpose(hist) 
 	plt.bar([i for i in range(256)],hist)
 	plt.savefig(destination);
+	plt.close();
 
 #task-3 Functions
 
@@ -69,6 +70,8 @@ def X_Y_cut(source, destination, lower_cross, upper_cross):
 		index2 = index2+1;
 
 	sub_images(point, im, destination);
+	plt.close();
+
 
 
 def sub_images(point, im, destination):
